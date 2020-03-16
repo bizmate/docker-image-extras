@@ -4,4 +4,5 @@ Extras:
 	- make
 	- python / pip
 	- docker-compose
+	- bash
  
