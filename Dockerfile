@@ -1,6 +1,4 @@
-FROM docker:dind
-MAINTAINER Diego Gullo <diego_gullo@bizmate.biz>
+FROM docker:27-dind
+LABEL org.opencontainers.image.authors="diego_gullo@bizmate.biz"
 
-RUN apk add --update --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make && \
-	pip install docker-compose
-RUN apk add bash git
+RUN apk add --update --no-cache py-pip python3-dev libffi-dev openssl-dev gcc libc-dev make bash git
